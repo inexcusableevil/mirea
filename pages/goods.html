@@ -7,66 +7,79 @@
         <link rel="stylesheet" href="../style/styles.css">
     </head>
     <body>
-        <div id="header">Хэдер</div>
-        
-        <div id="menu">
-            <ul>
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="practices.html">Практики</a></li> 
-                <li><a href="goods.html">Товары</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </div>
-        
-        <div id="content">
-            <h1>Каталог товаров</h1>
+        <div class="page-container">
+            <div class="header">Магазин электроники</div>
             
-            <div class="products-grid">
-                <!-- Товар 1 -->
-                <div class="product-card">
-                    <img src="../images/product1.jpg" alt="Ноутбук игровой" width="200" height="150">
-                    <h3>Ноутбук игровой</h3>
-                    <div class="price">85 000 ₽</div>
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="content">
+                <h1 class="page-title">Каталог товаров</h1>
+                
+                <div class="category-filter">
+                    <button class="filter-btn active">Все товары</button>
+                    <button class="filter-btn">Ноутбуки</button>
+                    <button class="filter-btn">Смартфоны</button>
+                    <button class="filter-btn">Аксессуары</button>
                 </div>
                 
-                <!-- Товар 2 -->
-                <div class="product-card">
-                    <img src="../images/product2.jpg" alt="Смартфон" width="200" height="150">
-                    <h3>Смартфон</h3>
-                    <div class="price">45 000 ₽</div>
-                </div>
-                
-                <!-- Товар 3 -->
-                <div class="product-card">
-                    <img src="../images/product3.jpg" alt="Наушники беспроводные" width="200" height="150">
-                    <h3>Наушники беспроводные</h3>
-                    <div class="price">12 500 ₽</div>
-                </div>
-                
-                <!-- Товар 4 -->
-                <div class="product-card">
-                    <img src="../images/product4.jpg" alt="Клавиатура механическая" width="200" height="150">
-                    <h3>Клавиатура механическая</h3>
-                    <div class="price">8 900 ₽</div>
-                </div>
-                
-                <!-- Товар 5 -->
-                <div class="product-card">
-                    <img src="../images/product5.jpg" alt="Монитор 27 дюймов" width="200" height="150">
-                    <h3>Монитор 27 дюймов</h3>
-                    <div class="price">34 000 ₽</div>
-                </div>
-                
-                <!-- Товар 6 -->
-                <div class="product-card">
-                    <img src="../images/product6.jpg" alt="Компьютерная мышь" width="200" height="150">
-                    <h3>Компьютерная мышь</h3>
-                    <div class="price">3 200 ₽</div>
+                <div class="products-grid">
+                    <!-- Товар 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../images/goods1.jpg" alt="Ноутбук игровой">
+                            <span class="product-badge">Хит продаж</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Ноутбук игровой ASUS ROG</h3>
+                            <p class="product-desc">Мощный игровой ноутбук с процессором Intel Core i7 и видеокартой RTX 4060</p>
+                            <div class="product-price">85 000 ₽</div>
+                            <button class="buy-btn">В корзину</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Товар 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../images/goods2.jpg" alt="Смартфон">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Samsung Galaxy S23</h3>
+                            <p class="product-desc">Флагманский смартфон с камерой 200 МП и процессором Snapdragon 8 Gen 2</p>
+                            <div class="product-price">45 000 ₽</div>
+                            <button class="buy-btn">В корзину</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Товар 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../images/goods3.jpg" alt="Наушники беспроводные">
+                            <span class="product-badge sale">Скидка 15%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sony WH-1000XM4</h3>
+                            <p class="product-desc">Беспроводные наушники с шумоподавлением и автономностью до 30 часов</p>
+                            <div class="product-price">
+                                <span class="old-price">14 900 ₽</span>
+                                <span class="current-price">12 500 ₽</span>
+                            </div>
+                            <button class="buy-btn">В корзину</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
+            <div class="footer">
+                <p>Интернет-магазин электроники &copy; 2023</p>
+            </div>
         </div>
-        
-        <div id="footer">Футер</div>    
     </body>
 </html>

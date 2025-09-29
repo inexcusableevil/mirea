@@ -7,63 +7,87 @@
         <link rel="stylesheet" href="../style/styles.css">
     </head>
     <body>
-        <div id="header">Хэдер</div>
-        
-        <div id="menu">
-            <ul>
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="practices.html">Практики</a></li> 
-                <li><a href="goods.html">Товары</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
+        <div class="page-container">
+            <div class="header">Новостной портал</div>
+            
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="content">
+                <h1 class="page-title">Последние новости</h1>
+                
+                <div class="news-grid">
+                    <!-- Новость 1 -->
+                    <article class="news-card featured">
+                        <div class="news-header">
+                            <h2 class="news-title">Запуск нового сайта</h2>
+                            <div class="news-meta">
+                                <span class="news-date">15 декабря 2023</span>
+                                <span class="news-author">Автор: Иванов Иван</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <p>Мы рады сообщить о запуске нашего нового сайта! После нескольких месяцев напряженной работы мы наконец-то готовы представить вам обновленную платформу.</p>
+                            <p>Новый сайт обладает улучшенным дизайном и более удобной навигацией. Мы уверены, что эти изменения сделают ваше пребывание на нашем ресурсе более комфортным.</p>
+                        </div>
+                        <div class="news-tags">
+                            <span class="news-tag">Сайт</span>
+                            <span class="news-tag">Запуск</span>
+                        </div>
+                    </article>
+
+                    <!-- Новость 2 -->
+                    <article class="news-card">
+                        <div class="news-header">
+                            <h2 class="news-title">Встреча с разработчиками</h2>
+                            <div class="news-meta">
+                                <span class="news-date">10 декабря 2023</span>
+                                <span class="news-author">Автор: Петров Алексей</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <p>На следующей неделе состоится встреча с командой разработчиков, где мы обсудим дальнейшие планы по развитию проекта.</p>
+                            <p>Мероприятие пройдет в формате открытого диалога, где каждый сможет задать интересующие вопросы и внести свои предложения.</p>
+                            <p>Ждем всех желающих 20 декабря в 15:00 в главном корпусе.</p>
+                        </div>
+                        <div class="news-tags">
+                            <span class="news-tag">Мероприятие</span>
+                            <span class="news-tag">Встреча</span>
+                        </div>
+                    </article>
+
+                    <!-- Новость 3 -->
+                    <article class="news-card">
+                        <div class="news-header">
+                            <h2 class="news-title">Обновление функционала</h2>
+                            <div class="news-meta">
+                                <span class="news-date">5 декабря 2023</span>
+                                <span class="news-author">Автор: Сидорова Мария</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <p>В ближайшее время планируется крупное обновление функционала сайта. Мы добавим новые разделы и улучшим существующие возможности.</p>
+                            <p>Среди нововведений: система комментариев, личный кабинет пользователя и расширенный поиск по контенту.</p>
+                            <p>Следите за обновлениями!</p>
+                        </div>
+                        <div class="news-tags">
+                            <span class="news-tag">Обновление</span>
+                            <span class="news-tag">Функционал</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <p>Новостной портал &copy; 2023</p>
+            </div>
         </div>
-        
-        <div id="content">
-            <h1>Новостной блог</h1>
-            
-            <!-- Новость 1 -->
-            <div class="news-item">
-                <h2>Запуск нового сайта</h2>
-                <div class="news-meta">
-                    <span class="date">Опубликовано: 15 декабря 2023</span>
-                    <span class="author">Автор: Иванов Иван</span>
-                </div>
-                <div class="news-text">
-                    <p>Мы рады сообщить о запуске нашего нового сайта! После нескольких месяцев напряженной работы мы наконец-то готовы представить вам обновленную платформу.</p>
-                    <p>Новый сайт обладает улучшенным дизайном и более удобной навигацией. Мы уверены, что эти изменения сделают ваше пребывание на нашем ресурсе более комфортным.</p>
-                </div>
-            </div>
-            
-            <!-- Новость 2 -->
-            <div class="news-item">
-                <h2>Встреча с разработчиками</h2>
-                <div class="news-meta">
-                    <span class="date">Опубликовано: 10 декабря 2023</span>
-                    <span class="author">Автор: Петров Алексей</span>
-                </div>
-                <div class="news-text">
-                    <p>На следующей неделе состоится встреча с командой разработчиков, где мы обсудим дальнейшие планы по развитию проекта.</p>
-                    <p>Мероприятие пройдет в формате открытого диалога, где каждый сможет задать интересующие вопросы и внести свои предложения.</p>
-                    <p>Ждем всех желающих 20 декабря в 15:00 в главном корпусе.</p>
-                </div>
-            </div>
-            
-            <!-- Новость 3 -->
-            <div class="news-item">
-                <h2>Обновление функционала</h2>
-                <div class="news-meta">
-                    <span class="date">Опубликовано: 5 декабря 2023</span>
-                    <span class="author">Автор: Сидорова Мария</span>
-                </div>
-                <div class="news-text">
-                    <p>В ближайшее время планируется крупное обновление функционала сайта. Мы добавим новые разделы и улучшим существующие возможности.</p>
-                    <p>Среди нововведений: система комментариев, личный кабинет пользователя и расширенный поиск по контенту.</p>
-                    <p>Следите за обновлениями!</p>
-                </div>
-            </div>
-        </div>
-        
-        <div id="footer">Футер</div>    
     </body>
 </html>
