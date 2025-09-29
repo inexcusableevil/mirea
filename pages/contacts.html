@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Контакты - Семестровая работа</title>
+    </head>
+    <body>
+        <div id="header">Хэдер</div>
+        
+        <div id="menu">
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="practices.html">Практики</a></li> 
+                <li><a href="goods.html">Товары</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        
+        <div id="content">
+            <h1>Контакты</h1>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h2>Электронная почта</h2>
+                    <p>
+                        <a href="mailto:example@university.ru">example@university.ru</a>
+                    </p>
+                </div>
+                
+                <div class="contact-item">
+                    <h2>Наш адрес</h2>
+                    <p>
+                        115280, г. Москва,<br>
+                        ул. Ленинская Слобода, д. 26<br>
+                        Бизнес-центр «Слобода»
+                    </p>
+                </div>
+                
+                <div class="contact-item">
+                    <h2>Телефон</h2>
+                    <button type="button" onclick="callMe()">Позвоните мне</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">Футер</div>
+        
+        <script>
+            function callMe() {
+                const phoneNumber = "+7 (495) 123-45-67";
+                if (confirm("Позвонить на номер: " + phoneNumber + "?")) {
+                    alert("Имитация звонка на номер: " + phoneNumber + "\nЗвонок осуществляется...");
+                    // В реальном проекте здесь мог бы быть код для настоящего звонка
+                    // window.location.href = 'tel:' + phoneNumber;
+                }
+            }
+        </script>
+    </body>
+</html>
